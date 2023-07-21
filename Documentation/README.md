@@ -99,7 +99,7 @@ The 1-wire connector can be used for connecting 1-wire sensors or can also be us
 
 <img alt="1-wire Header" src="../Images/1-wire-header.jpg" width="300"/>
 
-The 1-wire pin, GPIO4 is pulled up to 3V3 with a 3.9k resistor.
+The 1-wire pin, GPIO4 is pulled up to 3V3 with a 4.7k resistor.
 
 <img alt="1-wire Header Schematic" src="../Images/1-wire-header-schematic.jpg" width="300"/>
 
@@ -130,7 +130,7 @@ Examples of what this can be used for include adding external mosfets, relays or
 
 <img alt="GPIO Header" src="../Images/gpio-header.jpg" width="300"/>
 
-Both GPIO5 and GPIO6 pins are pulled up to 3V3 with a 3.9k resistor.
+Both GPIO5 and GPIO6 pins are pulled up to 3V3 with a 4.7k resistor.
 
 <img alt="GPIO Header Schematic" src="../Images/gpio-header-schematic.jpg" width="300"/>
 
