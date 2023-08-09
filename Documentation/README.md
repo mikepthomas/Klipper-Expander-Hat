@@ -7,6 +7,7 @@
   - [GPIO Header](#gpio-header)
   - [SPI Header](#spi-header)
   - [Fan Mosfets](#fan-mosfets)
+  - [DS18B20 Temperature Sensor](#ds18b20-temperature-sensor)
 - [Setup](#setup)
 
 # Components
@@ -124,21 +125,19 @@ sensor_mcu: rpi
 
 ## GPIO Header
 
-The GPIO headers J4 and J5 (3V3, GPIO, GND) is available for creative uses.
-
-Examples of what this can be used for include adding external mosfets, relays or a filament runout sensors.
+The GPIO headers GPIO20 - GPIO25 (GPIO, 3V3, GND) is available for creative uses.
 
 <img alt="GPIO Header" src="../Images/gpio-header.jpg" width="300"/>
 
-Both GPIO5 and GPIO6 pins are pulled up to 3V3 with a 4.7k resistor.
+Examples of what this can be used for include adding external mosfets, relays or a filament runout sensors.
 
 <img alt="GPIO Header Schematic" src="../Images/gpio-header-schematic.jpg" width="300"/>
 
 Example Output Pin configuration:
 
 ```bash
-[output_pin gpio5]
-pin: rpi:gpio5
+[output_pin gpio20]
+pin: rpi:gpio20
 value: 0
 shutdown_value: 0
 ```
@@ -148,7 +147,7 @@ Example Filament Sensor configuration:
 ```bash
 [filament_switch_sensor filament_sensor]
 pause_on_runout: true
-switch_pin: ^!rpi:gpio5
+switch_pin: ^!rpi:gpio20
 ```
 
 ## SPI Header
@@ -205,6 +204,14 @@ Example Hardware PWM Fan configuration:
 pin: rpi:pwmchip0/pwm0
 hardware_pwm: true
 ```
+
+# DS18B20 Temperature Sensor
+
+<img alt="DS18B20 Schematic" src="../Images/ds18b20.jpg" width="300"/>
+
+An example config to set up the Temperature sensor is available in the [1-wire Header](#1-wire-header) section.
+
+<img alt="DS18B20 Schematic" src="../Images/fs18b20-schematic.jpg" width="300"/>
 
 # Setup
 
