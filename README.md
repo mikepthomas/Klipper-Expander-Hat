@@ -9,7 +9,8 @@
 - 5 Mosfet outputs (with 2 pin JST-XH connectors standard on most fans used on 3D printers)
 - Voltage selector jumpers to power each fan from either 5V or VCC supplied by screw terminal
 - I2C and 1-Wire and SPI headers for connecting accesories to the Raspberry Pi
-- 2 headers connected to General Purpose GPIO pins for accesories such as Filament Run Out Sensors
+- 6 headers connected to General Purpose GPIO pins for accesories such as Filament Run Out Sensors
+- On Board DS18B20 Temperature Sensor
 
 ### Documentation
 
@@ -30,3 +31,4 @@
 - M2.5x14 BHCS [Ali Express](https://www.aliexpress.com/item/1005004123548619.html)
 - Pin Header Set [Amazon](https://www.amazon.co.uk/gp/product/B07CWSXY7P)
 - Raspberry Pi Headers and Spacers [Amazon](https://www.amazon.co.uk/gp/product/B07PHBTTGV)
+- DS18B20 Temperature Sensor [Ali Express](https://www.aliexpress.com/item/1783091649.html)
