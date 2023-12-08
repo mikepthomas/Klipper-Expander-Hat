@@ -2,7 +2,7 @@
 
 ![Klipper Fan Hat Front](Images/klipper-fan-hat-front.jpg)
 
-[Interactive bom](https://mikethomas.info/Klipper-Fan-Hat)
+[Interactive bom](https://klipper-fan-hat.mikethomas.info/)
 
 ### A Hat to use with the [Raspberry Pi as a Secondary MCU in Klipper](https://www.klipper3d.org/RPi_microcontroller.html):
 - SKR Pico compatible input for powering the Pi and Serial communication
